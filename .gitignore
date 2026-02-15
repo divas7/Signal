@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env
+.env.local
+
+# Node
+node_modules/
+.next/
+out/
+build/
+dist/
+
+# System
+.DS_Store
+.vscode/
+.idea/
+
+# Brain/Artifacts (local only)
+brain/
+*.log
