@@ -2,45 +2,66 @@
 
 **Institutional-Grade Trading Intelligence for the Retail Trader.**
 
-![Signal Dashboard](frontend/public/signal_logo_v3.png)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b5c7e0c7-1234-4567-8901-abcdef123456/deploy-status)](https://signalnb.netlify.app)
 
-## 🌟 Why SIGNAL?
+[**Live Demo: https://signalnb.netlify.app**](https://signalnb.netlify.app)
 
-Most people don't know how to trade effectively. The markets are complex, volatile, and often stacked against the individual investor. To make matters worse, recent government regulations have imposed higher taxes on Futures & Options (F&O), squeezing margins and making profitability even harder to achieve.
+## 🌟 The Vision
 
-We created **SIGNAL** to level the playing field. 
+Trading is hard. The markets are complex, volatile, and often stacked against the individual investor. To make matters worse, recent government regulations have imposed higher taxes on Futures & Options (F&O), squeezing margins and making profitability even harder to achieve.
 
-It provides clear, actionable intelligence without the noise, designed to give you a **better understanding** of market dynamics and improve your **profitability** in this challenging environment.
+We realized that most people simply don't have the tools to navigate this environment effectively. They rely on gut feelings, random tips, or overly complex charts that paralyze decision-making.
+
+**This is why we created SIGNAL.**
+
+Our goal was to build a system that cuts through the noise. We wanted to provide clear, data-driven intelligence that helps traders understand *what* is happening and *why*, empowering them to make better decisions in a challenging market.
 
 ---
 
-## 🚀 The S.T.A.R. Methodology
+## 🚀 Methodology
 
-SIGNAL is built upon our proprietary **S.T.A.R.** methodology, a comprehensive framework for market analysis:
+SIGNAL is built upon a robust analytical framework designed to process market data and output actionable intelligence:
 
-### **S - Sentiment (Regime)**
-Understanding the "mood" of the market is the first step. Is the market Bullish, Bearish, or Neutral? We analyze broad market data to determine the current regime, ensuring you never trade against the tide.
+### **1. Sentiment Analysis (Regime Detection)**
+We start by understanding the "mood" of the market. Is it Bullish, Bearish, or Neutral? By analyzing broad market data, we determine the current regime, ensuring you never trade against the tide.
 
-### **T - Technicals (Indicators)**
-We process real-time data using advanced technical indicators (EMA, RSI, MACD, Bollinger Bands) to identify precise entry and exit points. No more guessing—just data-driven signals.
+### **2. Technical Precision (Indicators)**
+We process real-time price action using advanced technical indicators (EMA, RSI, MACD, Bollinger Bands) to identify precise entry and exit points. This removes guesswork and replaces it with mathematical probability.
 
-### **A - Action (Decision Engine)**
+### **3. Decision Engine (Action)**
 Our expert system synthesizes Sentiment and Technicals into a clear, binary action: **BUY**, **SELL**, or **NEUTRAL**. It eliminates emotional decision-making, providing a confidence score for every signal.
 
-### **R - Risk (Management)**
-Profitability isn't just about making money; it's about not losing it. We provide dynamic Support & Resistance levels ("Levels Ladder") and clear stop-loss guidelines to protect your capital.
+### **4. Risk Management (Protection)**
+Profitability isn't just about making money; it's about keeping it. We provide dynamic Support & Resistance levels ("Levels Ladder") and clear stop-loss guidelines to protect your capital.
 
 ---
 
-## ✨ Key Features
+## 🛠️ Technology Stack
 
-- **Real-Time Signals**: Live BUY/SELL actionable insights with confidence scores.
-- **Expert Playbook**: automated commentary that explains *why* a signal was generated, in plain English.
-- **NIFTY & Bitcoin Support**: Track India's premier index and the world's leading cryptocurrency.
-- **Levels Ladder**: Dynamic support and resistance visualization.
-- **Market Status**: Instantly know if the market is Open, Closed, or in Pre-market.
+We built SIGNAL using a modern, scalable stack designed for speed and reliability.
 
-## 🛠️ Installation & Setup
+### **Frontend**
+- **Framework**: [Next.js](https://nextjs.org/) (React) - For server-side rendering and static generation.
+- **Language**: TypeScript - ensuring type safety and code quality.
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/) - utility-first CSS for rapid UI development.
+- **Charting**: [Lightweight Charts](https://tradingview.github.io/lightweight-charts/) - high-performance financial charts.
+- **Icons**: Lucide React - clean, consistent iconography.
+
+### **Backend**
+- **Framework**: [FastAPI](https://fastapi.tiangolo.com/) - high-performance Python web framework.
+- **Language**: Python 3.9+ - the standard for data science and financial analysis.
+- **Data Analysis**: Pandas & NumPy - for efficient time-series processing.
+- **Market Data**: `yfinance` - robust connector for fetching real-time market data.
+- **Server**: Uvicorn - lightning-fast ASGI server.
+
+### **Tools & DevOps**
+- **Version Control**: Git & GitHub
+- **Deployment**: Netlify (Frontend)
+- **Containerization**: Docker (optional)
+
+---
+
+## ⚡ Quick Start (Local Development)
 
 ### Prerequisites
 - Node.js (v18+)
